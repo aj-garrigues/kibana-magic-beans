@@ -1,0 +1,114 @@
+/* Dark theme, active only while the toggle puts .krj-dark-mode on <html>.
+   Hand-crafted surface overrides (an invert-filter approach breaks on this
+   Kibana's fixed headers due to Chrome compositor quirks). */
+
+html.krj-dark-mode body {
+  background-color: #141519 !important;
+  color: #dfe5ef !important;
+}
+
+/* header bars — all variants, so no fixed bar is ever left light */
+html.krj-dark-mode .euiHeader {
+  background-color: #1d1e24 !important;
+  border-bottom-color: #343741 !important;
+}
+html.krj-dark-mode .euiHeaderBreadcrumbs .euiBreadcrumb { color: #dfe5ef !important; }
+
+/* page background */
+html.krj-dark-mode .euiPage {
+  background-color: #1a1b20 !important;
+}
+
+/* panels, popovers, modals, flyouts */
+html.krj-dark-mode .euiPanel,
+html.krj-dark-mode .euiPageContent,
+html.krj-dark-mode .euiPopover__panel,
+html.krj-dark-mode .euiModal,
+html.krj-dark-mode .euiFlyout,
+html.krj-dark-mode .euiContextMenuPanel {
+  background-color: #1d1e24 !important;
+  color: #dfe5ef !important;
+}
+
+/* form controls (query bar, date picker, search inputs) */
+html.krj-dark-mode .euiFieldText,
+html.krj-dark-mode .euiFieldSearch,
+html.krj-dark-mode .euiTextArea,
+html.krj-dark-mode textarea,
+html.krj-dark-mode .euiFormControlLayout,
+html.krj-dark-mode .euiSelect,
+html.krj-dark-mode .euiSuperDatePicker button,
+html.krj-dark-mode .euiDatePopoverButton,
+html.krj-dark-mode .euiFormControlLayout__childrenWrapper,
+html.krj-dark-mode input[type="text"],
+html.krj-dark-mode input[type="search"] {
+  background-color: #1d1e24 !important;
+  color: #dfe5ef !important;
+  border-color: #343741 !important;
+}
+html.krj-dark-mode .euiFilterGroup,
+html.krj-dark-mode .dscFieldSearch__filterWrapper { background-color: #1d1e24 !important; }
+
+/* discover field sidebar */
+html.krj-dark-mode [data-test-subj="discover-sidebar"],
+html.krj-dark-mode .dscSidebar__container {
+  background-color: #1a1b20 !important;
+  color: #dfe5ef !important;
+}
+html.krj-dark-mode .dscFieldListHeader,
+html.krj-dark-mode .dscFieldList--popular {
+  background-color: #25262c !important;
+  color: #dfe5ef !important;
+}
+html.krj-dark-mode .dscFieldListHeader .euiTitle,
+html.krj-dark-mode .dscSidebar__container .euiText { color: #dfe5ef !important; }
+
+/* histogram */
+html.krj-dark-mode .echChartBackground { background-color: #141519 !important; }
+
+/* results table */
+html.krj-dark-mode .kbnDocTable,
+html.krj-dark-mode .kbnDocTable th,
+html.krj-dark-mode .kbnDocTable td {
+  background-color: #141519 !important;
+  color: #dfe5ef !important;
+  border-color: #343741 !important;
+}
+html.krj-dark-mode .kbnDocTable__row:hover td { background-color: #1d1e24 !important; }
+
+/* _source field-name badges */
+html.krj-dark-mode .kbn-table dl.source dt,
+html.krj-dark-mode .kbnDocTable dl.source dt {
+  background-color: rgb(84 179 153) !important;
+}
+
+/* expanded doc viewer + generic tables */
+html.krj-dark-mode .euiTable,
+html.krj-dark-mode .euiTable th,
+html.krj-dark-mode .euiTable td,
+html.krj-dark-mode .kbnDocViewer {
+  background-color: #1d1e24 !important;
+  color: #dfe5ef !important;
+}
+
+/* general text */
+html.krj-dark-mode .euiText,
+html.krj-dark-mode .euiTitle,
+html.krj-dark-mode .euiFormLabel,
+html.krj-dark-mode h1,
+html.krj-dark-mode h2,
+html.krj-dark-mode label { color: #dfe5ef !important; }
+
+/* search-hit highlight */
+html.krj-dark-mode mark {
+  background-color: #8a6a0a !important;
+  color: #fff !important;
+}
+
+/* beautified JSON syntax colors, dark variants */
+html.krj-dark-mode .krj-key { color: #ff7eb6 !important; }
+html.krj-dark-mode .krj-str { color: #3ddbd9 !important; }
+html.krj-dark-mode .krj-num { color: #be95ff !important; }
+html.krj-dark-mode .krj-bool,
+html.krj-dark-mode .krj-null { color: #ffab66 !important; }
+html.krj-dark-mode .krj-prefix { color: #dfe5ef !important; }
