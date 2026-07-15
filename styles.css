@@ -1,0 +1,30 @@
+/* Lift Kibana's 115px clamp only on cells we successfully beautified */
+.truncate-by-height.krj-cell {
+  max-height: 500px !important;
+  overflow-y: auto;
+}
+
+.krj-prefix {
+  font-weight: 600;
+}
+
+.krj-json {
+  white-space: pre;
+  font-family: Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 4px 0 0;
+  background: transparent;
+}
+
+.krj-key { color: #a0225c; }
+.krj-str { color: #00756c; }
+.krj-num { color: #7c3aed; }
+.krj-bool,
+.krj-null { color: #bd4800; font-weight: 600; }
+
+body.krj-dark .krj-key { color: #ff7eb6; }
+body.krj-dark .krj-str { color: #3ddbd9; }
+body.krj-dark .krj-num { color: #be95ff; }
+body.krj-dark .krj-bool,
+body.krj-dark .krj-null { color: #ffab66; }
