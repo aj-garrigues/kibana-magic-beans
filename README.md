@@ -1,5 +1,7 @@
 # Kibana Magic Beans
 
+![Kibana Magic Beans extension card](assets/preview.png)
+
 Chrome extension for Kibana that makes you feel as powerful as a Super Saiyan that even Bini Jhoanna might notice you.
 
 Pretty-prints the JSON inside Kibana Discover's `msg` column — syntax-colored, 2-space indented, with search-term highlights preserved — and lets each row grow up to 500px with its own scrollbar (instead of Kibana's default 115px clamp).
